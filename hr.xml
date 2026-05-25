@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="hr.xsd">
+
+    <regions>
+        <region region_id="1">
+            <region_name>América del Sur</region_name>
+        </region>
+        <region region_id="2">
+            <region_name>América Central</region_name>
+        </region>
+        <region region_id="3">
+            <region_name>América del Norte</region_name>
+        </region>
+    </regions>
+
+    <countries>
+        <country country_id="CO">
+            <country_name>Colombia</country_name>
+            <region_id>1</region_id>
+        </country>
+        <country country_id="AR">
+            <country_name>Argentina</country_name>
+            <region_id>1</region_id>
+        </country>
+        <country country_id="MX">
+            <country_name>México</country_name>
+            <region_id>3</region_id>
+        </country>
+    </countries>
+
+    <locations>
+        <location location_id="1000">
+            <street_address>Cra 7 # 7-34</street_address>
+            <postal_code>11675</postal_code>
+            <city>Bogotá</city>
+            <state_province>Cundinamarca</state_province>
+            <country_id>CO</country_id>
+        </location>
+        <location location_id="1400">
+            <street_address>Cra 6 # 12-65</street_address>
+            <postal_code>14325</postal_code>
+            <city>Buenos Aires</city>
+            <state_province>Buenos Aires</state_province>
+            <country_id>AR</country_id>
+        </location>
+        <location location_id="1700">
+            <street_address>Cra 6 # 5-45</street_address>
+            <postal_code>15426</postal_code>
+            <city>Ciudad de México</city>
+            <state_province>CDMX</state_province>
+            <country_id>MX</country_id>
+        </location>
+    </locations>
+
+    <departments>
+        <department department_id="10">
+            <department_name>Administración</department_name>
+            <manager_id>500</manager_id>
+            <location_id>1000</location_id>
+        </department>
+        <department department_id="20">
+            <department_name>Tecnología</department_name>
+            <manager_id>501</manager_id>
+            <location_id>1400</location_id>
+        </department>
+        <department department_id="30">
+            <department_name>Dirección Ejecutiva</department_name>
+            <manager_id>502</manager_id>
+            <location_id>1700</location_id>
+        </department>
+    </departments>
+
+    <jobs>
+        <job job_id="AsiAdm">
+            <job_title>Asistente Administrativo</job_title>
+            <min_salary>3000000</min_salary>
+            <max_salary>10000000</max_salary>
+        </job>
+        <job job_id="TecPro">
+            <job_title>Programador</job_title>
+            <min_salary>7000000</min_salary>
+            <max_salary>19000000</max_salary>
+        </job>
+        <job job_id="DirEje">
+            <job_title>Presidente</job_title>
+            <min_salary>10000000</min_salary>
+            <max_salary>20000000</max_salary>
+        </job>
+    </jobs>
+
+    <employees>
+        <employee employee_id="500">
+            <first_name>David</first_name>
+            <last_name>Vargas</last_name>
+            <email>dvargas98@gmail.com</email>
+            <phone_number>3147629845</phone_number>
+            <hire_date>2003-06-14</hire_date>
+            <job_id>AsiAdm</job_id>
+            <salary>9000000</salary>
+            <commission_pct>0.1</commission_pct>
+            <manager_id>502</manager_id>
+            <department_id>10</department_id>
+        </employee>
+        <employee employee_id="501">
+            <first_name>Sara</first_name>
+            <last_name>Conor</last_name>
+            <email>sarisconor@gmail.com</email>
+            <phone_number>3157634598</phone_number>
+            <hire_date>2007-01-04</hire_date>
+            <job_id>TecPro</job_id>
+            <salary>10000000</salary>
+            <commission_pct>0.16</commission_pct>
+            <manager_id>502</manager_id>
+            <department_id>20</department_id>
+        </employee>
+        <employee employee_id="502">
+            <first_name>Catalina</first_name>
+            <last_name>Beltrán</last_name>
+            <email>cabeltran@gmail.com</email>
+            <phone_number>3163985478</phone_number>
+            <hire_date>2008-09-14</hire_date>
+            <job_id>DirEje</job_id>
+            <salary>15000000</salary>
+            <commission_pct>0.13</commission_pct>
+            <manager_id>502</manager_id>
+            <department_id>30</department_id>
+        </employee>
+    </employees>
+
+    <job_history>
+        <history_entry>
+            <employee_id>500</employee_id>
+            <start_date>2003-06-14</start_date>
+            <end_date>2017-06-16</end_date>
+            <job_id>AsiAdm</job_id>
+            <department_id>10</department_id>
+        </history_entry>
+        <history_entry>
+            <employee_id>501</employee_id>
+            <start_date>2007-01-04</start_date>
+            <end_date>2020-07-14</end_date>
+            <job_id>TecPro</job_id>
+            <department_id>20</department_id>
+        </history_entry>
+        <history_entry>
+            <employee_id>502</employee_id>
+            <start_date>2008-09-14</start_date>
+            <end_date>2021-02-12</end_date>
+            <job_id>DirEje</job_id>
+            <department_id>30</department_id>
+        </history_entry>
+    </job_history>
+
+</hr>     
